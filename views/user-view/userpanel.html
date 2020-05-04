@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie web - Comment about your favorite movie</title>
+  <link rel="icon" type="image/png" href="../../img/favicon.png" sizes="32x32">
+  <!-- Bootstrap 4.0 / Bootswatch 4.4.1 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cyborg/bootstrap.min.css">
+  <!-- Fontawesome 4.7 -->
+  <script src="https://kit.fontawesome.com/a45b9a7436.js" crossorigin="anonymous"></script>
+  <!-- CSS styles -->
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <!-- scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container-fluid px-0">
+    <div class="container-fluid bg-portada p-0">
+      <!-- NAVIGATION BAR -->
+      <div class="row px-0 mx-0">
+        <nav class="col-md-12 navbar navbar-expand-lg navbar-dark py-auto mt-2 px-0">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContainer"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">MovieWeb</a>
+            <div class="collapse navbar-collapse" id="navContainer">
+              <!-- Menu content -->
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../views/contact.html">Contact</a>
+                </li>
+              </ul>
+              <button class="btn btn-info my-2 mr-2 my-sm-0" id="signup" type="button" data-toggle="modal" data-target="#signUn">Sign up</button>
+            </div>
+         </div>
+        </nav>
+      </div>
+
+      <!-- FRONT PAGE -->
+      <div class="container-fluid py-5">
+        <div class="row py-5  mb-2">
+          <div class="container col-md-6">
+            <h2 class="display-4">MOVIE<span class="text-success">WEB</span></h2>
+            <P class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab tempora iusto, porro
+              accusamus nisi
+              incidunt veritatis minima dolorum neque.</P>
+            <div class="my-auto pb-4">
+              <button class="btn btn-info px-5 my-auto register-btn">Sign up</button>
+            </div>
+          </div>
+          <div class="container col-md-4 col-sm-12 p-4 bg-translucid mb-4 rounded">
+            <form class="py-auto">
+              <h3 class="display-5 text-white text-center" id="login">Login</h3>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="user">Username</label>
+                  <div class="input-group">
+                    <input id="user" name="user" placeholder="Username" type="text" required="required"
+                      class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="Password">Password</label>
+                  <div class="input-group">
+                    <input id="Password" name="Password" placeholder="Password" type="text" class="form-control">
+                  </div>
+                  <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <button name="submit" type="submit" class="btn btn-block btn-primary">Login</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- STEPS -->
+<h4 class="text-center my-5" id="steps">READY?</h4>       
+    <div class="row mx-5 my-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+    data-aos-duration="2000">
+      <div class="card-deck mx-auto text-center">
+        <div class="card pt-5 shadow-port hoverCard">
+          <i class="fas fa-user-astronaut iconLarge mx-auto"></i>
+          <div class="card-body mt-4">
+            <h5 class="card-title">Register</h5>
+          </div>
+        </div>
+        <div class="card pt-5 shadow-port hoverCard">
+          <i class="fas fa-comment-medical iconLarge mx-auto"></i>
+          <div class="card-body mt-4">
+            <h5 class="card-title">Upload you review</h5>
+          </div>
+        </div>
+        <div class="card pt-5 shadow-port hoverCard">
+          <i class="fas fa-comments iconLarge mx-auto"></i>
+          <div class="card-body mt-4">
+            <h5 class="card-title">Read comments</h5>
+          </div>
+        </div>
+        <div class="card pt-5 shadow-port hoverCard">
+          <i class="fas fa-rocket iconLarge mx-auto"></i>
+          <div class="card-body mt-4">
+            <h5 class="card-title">Enjoy</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOVIES SECTION COMMENTS -->
+    <h4 class="text-center my-5" id="comments">SOME USERS COMMENTS</h4>
+    <div class="row rounded my-5 mx-5 bg-light shadow-port carousel slide" id="containerCommentMovies">
+      <div class="carousel-inner mx-auto">
+        <div class="col-md-12 text-center carousel-item active" id="containerComment" data-ride="carousel" data-aos="fade-left"
+        data-aos-anchor-placement="button-center" data-aos-duration="1600">
+          <!-- Info comment: nameUser-commentContent-movieName -->
+          <div class="w-25 mx-auto py-2">
+            <img src="../img/user.jpg" id="userAvatar" class="w-50 rounded-circle border border-success p-0" alt="userimage">
+          </div>
+          <h5 id="userName">John Doe</h5>
+          <p id="commentContent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, repudiandae!</p>
+          <p class="bold" id="movieNameComment">MovieName</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY MOVIE WEB... -->
+    <h4 class="text-center my-4" id="whymovieweb">MOVIE WEB?</h4>
+    <div class="row mx-4 my-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+    data-aos-duration="2000">
+      <div class="card-deck text-center">
+        <div class="card py-4 shadow-port hoverCard">
+          <i class="fas fa-question iconLarge"></i>
+          <div class="card-body">
+            <h5 class="card-title">Why?</h5>
+            <p class="card-text">You dont know what movie to watch and lose your time trying to find one? </p>
+          </div>
+          <button class="btn btn-success mx-auto">Show</button>
+        </div>
+        <div class="card py-4 shadow-port hoverCard">
+          <i class="fas fa-lightbulb iconLarge"></i>
+          <div class="card-body">
+            <h5 class="card-title">How?</h5>
+            <p class="card-text">This is your site! Find little sinopsis and see what to think other members about the movie you want to watch.</p>
+          </div>
+          <button class="btn btn-success mx-auto">Show</button>
+        </div>
+        <div class="card py-4 shadow-port hoverCard">
+          <i class="fas fa-video iconLarge"></i>
+          <div class="card-body">
+            <h5 class="card-title">Wow!</h5>
+            <p class="card-text">You can see the movies if the link is avaiable and comment giving congrats!
+              Enjoy!
+            </p>
+          </div>
+          <button class="btn btn-success mx-auto">Show</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="jumbotron mb-0 pt-4 pb-0">
+      <div class="row d-flex justify-content-around pt-3">
+        <div class="col-md-6 col-sm-12 mx-auto">
+          <ul>
+            <li>
+              <h2 class="display-5 pl-2">Movie<span class="text-success">Web</span></h2>
+            </li>
+            <li><img src="../../img/favicon.png" class="img-fluid pb-3" alt="Movie web"></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 mx-auto p-0">
+          <ul class=" d-flex justify-content-around p-0">
+            <li class="d-block footerList">
+              <h5><a href="userhome.html">Home</a></h5>
+              <ul class=" footerList">
+                <li><a href="userhome.html#explore">Explore</a></li>
+                <li><a href="userhome.html#inputSearch">Search</a></li>
+              </ul>
+            </li>
+            <li class="d-block footerList">
+              <h5><a href="userprofile.html">Profile</a></h5>
+              <ul class="footerList">
+                <li><a href="userprofile.html#editInfo">Edit info</a></li>
+                <li><a href="userprogile.html#moviesList">List</a></li>
+              </ul>
+            </li>
+            <li class="d-block footerList">
+              <h5><a href="contact.html">Contacto</a></h5>
+              <ul class="footerList">
+                <li>(011) 4841 5478</li>
+                <li>Direccion 234 - Arg</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-2">
+      <div class="row pt-2">
+        <div class="col-md-6 my-0">
+          <p class="footer-copyright display-5 text-center">© 2020 Copyright: Comunidad IT</p>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-0 text-center">
+            <a href="#" class="fb-ic text-secondary" title="Facebook">
+              <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+            </a>
+            <a href="#" class="tw-ic text-secondary" title="Twitter">
+              <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+            </a>
+            <a href="#" class="ins-ic text-secondary" title="Instagram">
+              <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BUTTON TO TOP -->
+    <button class="btn btn-success toTop" id="toTopBtn" title="Go to top" onclick="toTop()"> <i class="fas fa-chevron-up"> </i></button>
+  </div>
+
+  <!-- Bootrstrap 4.0 JS/POPPER/JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="../js/btnFunction.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script src="../js/routes.js"></script>
+  <script src="../js/modalRegister.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+ <!-- Modal register -->
+
+ <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content registerForm rounded p-3" id="modalRegisterCont">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModal">Register</h5>
+          <button type="button" class="close text-dark" data-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-body row">
+          <div class="col-md-12">
+            <form action="" method="POST">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">First name</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fa fa-user"></i>
+                      </div>
+                    </div>
+                    <input id="name" name="name" placeholder="Name" type="text" required="required"
+                      class="form-control">
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastname">Last name</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fa fa-user"></i>
+                      </div>
+                    </div>
+                    <input id="lastname" name="lastname" placeholder="Lastname" type="text" required="required"
+                      class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-user"></i>
+                    </div>
+                  </div>
+                  <input id="username" name="username" placeholder="Username" type="text" required="required"
+                    class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-envelope-open"></i>
+                    </div>
+                  </div>
+                  <input id="email" name="email" placeholder="email@example.com" type="text" required="required"
+                    class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="text">Phone</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-mobile-phone"></i>
+                    </div>
+                  </div>
+                  <input id="text" name="text" type="text" placeholder="+12123123" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                  </div>
+                  <input id="password" name="password" placeholder="Your password" type="text" class="form-control"
+                    required="required" aria-describedby="passwordHelpBlock">
+                </div>
+                <span id="passwordHelpBlock" class="form-text text-muted">At least 10 characters</span>
+              </div>
+              <hr>
+              <div class="form-group">
+                <button name="submit" type="submit" id="registerUser"
+                  class="btn btn-block btn-primary">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
