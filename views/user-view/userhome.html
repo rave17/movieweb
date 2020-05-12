@@ -58,30 +58,31 @@
     </div>
     <div class="row">
       <div class="col-md-8 mx-auto input-group my-3">
-        <input type="text" class="form-control" placeholder="Search a movie" id="inputSearch" aria-label="movie search"
+        <input type="text" class="form-control" placeholder="Search a movie" id="#inputSearch" aria-label="movie search"
           aria-describedby="basic-addon2">
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary" id="searchBtn" type="submit">Search</button>
+          <button class="btn btn-outline-secondary" id="#searchBtn" type="submit">Search</button>
         </div>
       </div>
     </div>
     <hr class="w-75">
-    <div class="row mt-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+<!-- carrousel movies -->
+   <!--  <div class="row" id="#carrouselContainer" class="carrousel-slide" data-ride="carousel">
+      
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> -->
+
+    <div class="row mt-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" id="#containerMoviesList">
       
       <!-- DATA MOVIE -->
-      <div class="col-md-10 card-deck d-flex justify-content-between mx-auto mb-4" id="containerMoviesList">
-        <div class="col-md-3 card-body" id="containerMovie">
-          <img src="../../img/btf.jpg" class="imgMovie img-fluid" alt="" id="imgMovie">
-        </div>
-        <div class="col-md-7 card-body" id="dataMovie">
-          <h5 class="pb-4" id="movieTitle">Back to the future</h5>
-          <p class="pb-4" id="movieSynopsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius veritatis
-            dolore repudiandae tenetur tempora nulla aperiam optio ipsam quam consequatur inventore accusantium, impedit
-            atque harum officia, tempore soluta, perferendis eos.</p>
-          <button class="btn btn-success" id="addFavorite"><a href="userprofile.html#list">Add to favorite</a></button>
-          <button class="btn btn-info" id="seeMovie"><a href="movie.html#"> See more</a></button>
-        </div>
-      </div>
+
       <hr class="w-75">
     </div>
 
@@ -153,7 +154,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="../../js/btnFunction.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <script src="../../js/moviedb.js"></script>
   <script src="../js/routes.js"></script>
   <script src="../js/modalRegister.js"></script>
   <script>
