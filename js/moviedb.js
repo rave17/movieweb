@@ -7,65 +7,43 @@ const inputSearch = document.getElementById('#inputSearch');
 const searchBtn = document.getElementById('#searchBtn');
 const containerMoviesList = document.getElementById('#containerMoviesList');
 
-//...........inner to carrousel
-/* function movieCarrousel(resAllMovies){
-    return resAllMovies.map((movie)=>{
-        if(movie.poster_path){
-        return `
-       
-        <div class="carousel-item" id=${movie.id}>
-            <img src=${imgUrl + movie.poster_path} class="d-block w-100" alt=${movie.title} data-movie-id=${movie.id}/>
-        </div>`
-        } else {
-            return null;
-        };
-    })
-};
-
-function createCarrousel(resMovie){
-    const movieCarrousel = document.createElement('div');
-    movieCarrousel.setAttribute('class', 'carrousell-inner');
-
-    const oneMovieCarrousel = movieCarrousel(resMovie);
-
-    movieCarrousel.innerHTML = oneMovieCarrousel;
-    return movieCarrousel;
-}
- ------------------------*/
 
 //create info movie
 function movieSection(resMovie){
-    return resMovie.map((movie)=>{
-        if(movie.poster_path){
-        return `  
-        <div class="col-md-3 card-body" id=${movie.id}>
-            <img src=${imgUrl + movie.poster_path} class="imgMovie img-fluid" alt=${movie.title} data-movie-id=${movie.id}/>
-        </div>
-            <div class="col-md-7 card-body">
-            <h5 class="pb-4" id="movieTitle">${movie.title}</h5>
-            <p class="py-2">${movie.genres_ids}</p>
-            <p class="pb-4" id="movieSynopsis">${movie.overview}</p>
-            <button class="btn btn-success" id="#addFavorite">
-                <a href="userprofile.html#list">Add to favorite</a>
-            </button>
-            <button class="btn btn-info" id="#seeMovie">
-                <a href="movie.html"> See more</a>
-            </button>
-          </div>`
-        } else {
-            return null;
+    let peliculas = '';
+
+    resMovie.forEach((movie)=>{
+        console.log(`esto es ${movie}`)
+       if(movie.poster_path){ 
+        peliculas += `<div class="col-md-3 col-sm-3 card-body" id=${movie.id}>
+                        <img src=${imgUrl + movie.poster_path} class="img-fluid" alt=${movie.title} data-movie-id=${movie.id}/>
+                    </div>
+                        <div class="col-md-7 col-sm-7 card-body">
+                        <h5 class="pb-4" id="movieTitle">${movie.title}</h5>
+                        <p class="py-2">Genre: ${movie.genres_ids}</p>
+                        <p class="pb-4" id="movieSynopsis">${movie.overview}</p>
+                        <button class="btn btn-success" id="#addFavorite">
+                            <a href="userprofile.html#list">Add to favorite</a>
+                        </button>
+                        <button class="btn btn-info" id="#seeMovie">
+                            <a href="movie.html"> See more</a>
+                        </button>
+                    </div>`
+                    console.log(movie);
         };
-    })
-};
+    });
+    return peliculas;
+}
 
 //create container movie
 function createMovie(resMovie){
     const containerMovie = document.createElement('div');
-    containerMovie.setAttribute('class', 'col-md-10 card-deck d-flex justify-content-between mx-auto mb-4');
+    containerMovie.setAttribute('class', 'col-md-10 col-sm-10 card-deck d-flex justify-content-between mx-auto mb-4');
 
-  const movieData = movieSection(resMovie);
+    const movieData = movieSection(resMovie);
 
     containerMovie.innerHTML = movieData;
+    console.log(containerMovie)
     return containerMovie;
 }
 
@@ -82,48 +60,10 @@ searchBtn.onclick = function(e){
     .then(data => {
  
         const resMovie = data.results;
-        console.log(resMovie)
 
         const movieInfo = createMovie(resMovie);
         containerMoviesList.appendChild(movieInfo);
     })
     .catch(err=>console.error(err))
 }
-
-//go one movie
-
-document.onclick =function(event){
-    const target = event.target;
-    if(target.tagName.toLowerCase()==='img'){
-        const movieID = target.dataset.movieId;
-        console.log(movieID)
-        const containerM = event.target.parentElement;
-        const content = containerM.nextElementSibling;
-    }
-}
-//get one movie to click
-/* function createOneMovie(movieID){
-    const containerOneMovie = document.getElementById('#containerOneMovie');
-
-    return movieID.map((movie)=>{
-        if(movie.poster_path){
-        return `  
-        <div class="col-md-3 card-body" id=${movie.id}>
-            <img src=${imgUrl + movie.poster_path} class="imgMovie img-fluid" alt=${movie.title} data-movie-id=${movie.id}/>
-        </div>
-            <div class="col-md-7 card-body">
-            <h5 class="pb-4" id="movieTitle">${movie.title}</h5>
-            <p class="pb-4" id="movieSynopsis">${movie.overview}</p>
-            <button class="btn btn-success" id="#addFavorite">
-                <a href="userprofile.html#list">Add to favorite</a>
-            </button>
-            <button class="btn btn-info" id="#seeMovie">
-                <a href="movie.html"> See more</a>
-            </button>
-          </div>`
-        } else {
-            return null;
-        };
-    })
-} */
 
