@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+}
+a:link{
+    text-decoration: none;
+
+}
+
+h4{
+    color: #c4c4c4;
+    letter-spacing: 0.2em;
+}
+.btn{
+    transition: 0.4s;
+}
+.btn-lg{
+    letter-spacing: 0.1em;
+}
+.bg-portada{
+    background-image: url("../img/portada.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-portada2{
+    height: 50vh;
+    background-image: url("../img/portada2.png");
+    background-repeat: no-repeat;
+    background-size:inherit;
+}
+.bg-translucid{
+    background:rgba(32, 27, 133, 0.315);
+}
+.bg-translucid-modal{
+    background:rgba(22, 20, 43, 0.829);
+}
+.registerForm{
+    background: #d6d5d3;
+}
+.shadow-port{
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.iconLarge {
+    font-size: 4.5em
+}
+.iconLarge:hover{
+    color: #77b300;
+}
+.movie {
+    width: 10em;
+    height: auto;
+}
+.hoverCard{
+transition: 0.7s;
+}
+.hoverCard:hover{
+    background: #1a1a1a;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+.linkFooter{
+    text-decoration: none;
+}
+.toTop{
+    display: none;
+    position: fixed;
+    bottom: 8px;
+    right: 30px;
+    z-index: 99;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 4px;
+}
+.card{
+    transition: all .2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+/* profile styles */
+.imgProfile{
+    width: 95px;
+    height: 95px;
+} 
+.navbar-collapse{
+    z-index: 99;
+    padding-left: 1em;;
+    
+}
+
