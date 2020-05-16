@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie web - Comment about your favorite movie</title>
+  <link rel="icon" type="image/png" href="../../img/favicon.png" sizes="32x32">
+  <!-- Bootstrap 4.0 / Bootswatch 4.4.1 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cyborg/bootstrap.min.css">
+  <!-- Fontawesome 4.7 -->
+  <script src="https://kit.fontawesome.com/a45b9a7436.js" crossorigin="anonymous"></script>
+  <!-- CSS styles -->
+  <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+  <!-- scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container-fluid px-0">
+    <div class="container-fluid p-0 bg-portada" >
+      <!-- NAVIGATION BAR -->
+    
+
+      <!-- FRONT PAGE -->
+      <div class="row mt-2 mx-0 " data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" id="#containerOneMovie">
+      
+        <!-- DATA MOVIE -->
+        
+        
+        <hr class="w-75">
+      </div>
+      <div class="row px-0 mx-0">
+        <div class="col-md-6 mx-auto my-3" id="containerComments">
+          <div class="container mx-auto" id="containerCommentsOfMovie">
+            <!-- comments -->
+          </div>
+          <form action="" class="form-group">
+            <div class="form-group">
+              <label for="exampleTextarea"><h5 class="text-success">Comment</h5></label>
+              <textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
+            </div>
+            <button class="btn btn-success btn-block">Comment</button>
+          </form>
+        </div>
+      </div>
+    <!-- FOOTER -->
+
+    <!-- BUTTON TO TOP -->
+    <button class="btn btn-success toTop" id="toTopBtn" title="Go to top" onclick="toTop()"> <i class="fas fa-chevron-up"> </i></button>
+  </div>
+
+
+  <!-- Bootrstrap 4.0 JS/POPPER/JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="../../js/particles.js"></script>
+  <script src="../../js/app.js"></script>
+  <script src="../../js/btnFunction.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../../js/getGenres.js"></script>
+
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie web - Comment about your favorite movie</title>
+  <link rel="icon" type="image/png" href="../../img/favicon.png" sizes="32x32">
+  <!-- Bootstrap 4.0 / Bootswatch 4.4.1 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cyborg/bootstrap.min.css">
+  <!-- Fontawesome 4.7 -->
+  <script src="https://kit.fontawesome.com/a45b9a7436.js" crossorigin="anonymous"></script>
+  <!-- CSS styles -->
+  <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+  <!-- scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container-fluid px-0">
+    <div class="container-fluid bg-portada p-0">
+      <!-- NAVIGATION BAR -->
+
+      <!-- EXPLORE-->
+      <h3 class="text-center py-5" id="explore">EXPLORE</h3>
+    </div>
+    <div class="row mx-0">
+      <div class="col-md-8 mx-auto input-group my-3">
+        <input type="text" class="form-control" placeholder="Search a movie" id="#inputSearch" aria-label="movie search"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" id="#searchBtn" type="submit">Search</button>
+        </div>
+      </div>
+    </div>
+    <hr class="w-75">
+
+    <div class="row mt-2 mx-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" id="#containerMoviesList">
+      
+      <!-- DATA MOVIE -->
+
+      <hr class="w-75">
+    </div>
+
+    <!-- FOOTER -->
+    <div class="jumbotron mb-0 pt-4 pb-0">
+      <div class="row d-flex justify-content-around pt-3">
+        <div class="col-md-6 col-sm-12 mx-auto">
+          <ul>
+            <li>
+              <h2 class="display-5 pl-2">Movie<span class="text-success">Web</span></h2>
+            </li>
+            <li><img src="../../img/favicon.png" class="img-fluid pb-3" alt="Movie web"></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 mx-auto p-0">
+          <ul class=" d-flex justify-content-around p-0">
+            <li class="d-block footerList">
+              <h5><a href="userhome.html">Home</a></h5>
+              <ul class=" footerList">
+                <li><a href="userhome.html#explore">Explore</a></li>
+                <li><a href="userhome.html#inputSearch">Search</a></li>
+              </ul>
+            </li>
+            <li class="d-block footerList">
+              <h5><a href="userprofile.html">Profile</a></h5>
+              <ul class="footerList">
+                <li><a href="userprofile.html#editInfo">Edit info</a></li>
+                <li><a href="userprofile.html#moviesList">List</a></li>
+              </ul>
+            </li>
+            <li class="d-block footerList">
+              <h5><a href="contact.html">Contacto</a></h5>
+              <ul class="footerList">
+                <li>(011) 4841 5478</li>
+                <li>Direccion 234 - Arg</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-2">
+      <div class="row pt-2">
+        <div class="col-md-6 my-0">
+          <p class="footer-copyright display-5 text-center">© 2020 Copyright: Comunidad IT</p>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-0 text-center">
+            <a href="#" class="fb-ic text-secondary" title="Facebook">
+              <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+            </a>
+            <a href="#" class="tw-ic text-secondary" title="Twitter">
+              <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+            </a>
+            <a href="#" class="ins-ic text-secondary" title="Instagram">
+              <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BUTTON TO TOP -->
+    <button class="btn btn-success toTop" id="toTopBtn" title="Go to top" onclick="toTop()"> <i
+        class="fas fa-chevron-up"> </i></button>
+  </div>
+
+  <!-- Bootrstrap 4.0 JS/POPPER/JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="../../js/btnFunction.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../../js/getGenres.js"></script>
+  <script src="../../js/moviedb.js"></script>
+  <script src="../../js/getOneMovie.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

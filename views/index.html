@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie web - Comment about your favorite movie</title>
+  <link rel="icon" type="image/png" href="../img/favicon.png" sizes="32x32">
+  <!-- Bootstrap 4.0 / Bootswatch 4.4.1 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cyborg/bootstrap.min.css">
+  <!-- Fontawesome 4.7 -->
+  <script src="https://kit.fontawesome.com/a45b9a7436.js" crossorigin="anonymous"></script>
+  <!-- CSS styles -->
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <!-- scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid px-0">
+    <div class="container-fluid bg-portada py-0 px-5">
+      <!-- NAVIGATION BAR -->
+
+      <!-- FRONT PAGE -->
+      <div class="container-fluid py-5">
+        <div class="row pb-5 mb-2">
+          <div class="container col-md-5">
+            <h2 class="display-4">MOVIE<span class="text-success">WEB</span></h2>
+            <P class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab tempora iusto, porro
+              accusamus nisi
+              incidunt veritatis minima dolorum neque.</P>
+            <div class="my-auto pb-4">
+              <button class="btn btn-info px-5 my-auto register-btn" data-toggle="modal" data-target="#btnSignup">Sign up</button>
+            </div>
+          </div>
+          <div class="container col-md-4 col-sm-12 p-4 bg-translucid mb-4 rounded">
+            <form class="py-auto">
+              <h3 class="display-5 text-white text-center" id="login">Login</h3>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="user">Username</label>
+                  <div class="input-group">
+                    <input id="user" name="user" placeholder="Username" type="text" required="required"
+                      class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="Password">Password</label>
+                  <div class="input-group">
+                    <input id="Password" name="Password" placeholder="Password" type="text" class="form-control">
+                  </div>
+                  <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <button name="submit" type="submit" class="btn btn-block btn-primary">Login</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- STEPS -->
+<h4 class="text-center my-5" id="steps">READY?</h4>       
+    <div class="row mx-5 my-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+    data-aos-duration="2000">
+      <div class="card-deck mx-auto text-center">
+        <div class="card pt-5 shadow-port hoverCard">
+          <i class="fas fa-user-astronaut iconLarge mx-auto"></i>
+          <div class="card-body mt-4">
+            <h5 class="card-title">Register</h5>
+          </div>
+        </div>
+        <div class="card pt-5 shadow-port hoverCard">
+          <i class="fas fa-comment-medical iconLarge mx-auto"></i>
+          <div class="card-body mt-4">
+            <h5 class="card-title">Upload you review</h5>
+          </div>
+        </div>
+        <div class="card pt-5 shadow-port hoverCard">
+          <i class="fas fa-comments iconLarge mx-auto"></i>
+          <div class="card-body mt-4">
+            <h5 class="card-title">Read comments</h5>
+          </div>
+        </div>
+        <div class="card pt-5 shadow-port hoverCard">
+          <i class="fas fa-rocket iconLarge mx-auto"></i>
+          <div class="card-body mt-4">
+            <h5 class="card-title">Enjoy</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOVIES SECTION COMMENTS -->
+    <h4 class="text-center my-5" id="comments">SOME USERS COMMENTS</h4>
+    <div class="row rounded my-5 mx-5 bg-light shadow-port carousel slide" id="containerCommentMovies">
+      <div class="col-md-10 carousel-inner mx-auto">
+        <div class="mx-auto text-center carousel-item active" id="containerComment" data-ride="carousel" data-aos="fade-left"
+        data-aos-anchor-placement="button-center" data-aos-duration="1600">
+          <!-- Info comment: nameUser-commentContent-movieName -->
+          <div class="w-25 mx-auto py-2">
+            <img src="../img/user.jpg" id="userAvatar" class="w-50 rounded-circle border border-success p-0" alt="userimage">
+          </div>
+          <h5 id="userNameComment">John Doe</h5>
+          <p id="commentContent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, repudiandae!</p>
+          <p class="bold" id="movieNameComment">MovieName</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY MOVIE WEB... -->
+    <h4 class="text-center my-4" id="whymovieweb">MOVIE WEB?</h4>
+    <div class="row mx-4 my-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+    data-aos-duration="2000">
+      <div class="card-deck col-md-10 mx-auto text-center">
+        <div class="card py-4 shadow-port hoverCard">
+          <i class="fas fa-question iconLarge"></i>
+          <div class="card-body">
+            <h5 class="card-title">Why?</h5>
+            <p class="card-text">You dont know what movie to watch and lose your time trying to find one? </p>
+          </div>
+          <button class="btn btn-success mx-auto">Show</button>
+        </div>
+        <div class="card py-4 shadow-port hoverCard">
+          <i class="fas fa-lightbulb iconLarge"></i>
+          <div class="card-body">
+            <h5 class="card-title">How?</h5>
+            <p class="card-text">This is your site! Find little synopsis and see what to think other members about the movie you want to watch.</p>
+          </div>
+          <button class="btn btn-success mx-auto">Show</button>
+        </div>
+        <div class="card py-4 shadow-port hoverCard">
+          <i class="fas fa-video iconLarge"></i>
+          <div class="card-body">
+            <h5 class="card-title">Wow!</h5>
+            <p class="card-text">You can see the movies if the link is available and comment with thanks!
+              enjoy it!
+            </p>
+          </div>
+          <button class="btn btn-success mx-auto">Show</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MORE SECTION -->
+    <h4 class="text-center my-4" id="more">MORE</h4>
+    <p class="blockquote text-center mx-5">We want to facilitate the experiences of enjoying a good movie. You can use the platform to create your own list of favorite movies, so you can access it and see which movies interest you.</p>
+    <div class="row py-3 mx-0">
+     <div class="col-md-4 mx-auto">
+      <button class="py-2 btn btn-block btn-info"  data-toggle="modal" data-target="#btnSignup">JOIN US!</button>
+     </div>
+    </div>
+    <div class="col-md-12 mx-auto px-0 py-2" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+      <img src="../img/portada2.png" class="my-5 w-100" alt="">
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- BUTTON TO TOP -->
+    <button class="btn btn-success toTop" id="toTopBtn" title="Go to top" onclick="toTop()"> <i class="fas fa-chevron-up"> </i></button>
+  </div>
+
+  <!-- Bootrstrap 4.0 JS/POPPER/JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="../js/btnFunction.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/modalSignup.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+<div class="modal fade" id="btnSignup" tabindex="-1" role="dialog" aria-labelledby="signUpForm" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content bg-translucid-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signUpForm">WELCOME</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+<!-- form register -->     
+      <form class="p-4">
+        <h5>Sign up</h5>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="name">First Name</label>
+              <input type="text" class="form-control" placeholder="" id="name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" class="form-control" placeholder="" id="lastname">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" placeholder="" id="email">
+            </div>
+          </div>
+          <div class="col-md-6">      
+            <div class="form-group">
+              <label for="nickname">Nickname</label>
+              <input type="text" class="form-control" id="nickname" placeholder="">
+            </div>
+          </div>  
+        </div>        
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" placeholder="" id="password">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="confirmPassword">Confirm password</label>
+              <input type="password" class="form-control" placeholder="" id="confirmPassword">
+            </div>
+          </div>         
+        </div>
+      </form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="#btnJoinUs">Join us</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
