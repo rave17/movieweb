@@ -96,3 +96,15 @@ ul{
     
 }
 
+/* slide */
+.imgPointer{
+    width: 16%;
+    transition: 0.5s;
+}
+.imgPointer:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+
+}
+
+
