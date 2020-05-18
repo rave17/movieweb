@@ -24,24 +24,24 @@
     
 
       <!-- FRONT PAGE -->
-      <div class="row mt-2 mx-0 " data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" id="#containerOneMovie">
-      
+      <div class="row mt-2 mx-0 bg-translucid-modal px-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+      <div id="movie" class="col-md-10 col-sm-10 card-deck d-flex justify-content-between mx-auto mb-4">
+
+      </div>
         <!-- DATA MOVIE -->
-        
-        
-        <hr class="w-75">
+  
       </div>
       <div class="row px-0 mx-0">
         <div class="col-md-6 mx-auto my-3" id="containerComments">
           <div class="container mx-auto" id="containerCommentsOfMovie">
             <!-- comments -->
           </div>
-          <form action="" class="form-group">
+          <form action="" method="post" class="form-group">
             <div class="form-group">
-              <label for="exampleTextarea"><h5 class="text-success">Comment</h5></label>
-              <textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
+              <label for="comment"><h5 class="text-success">Comment</h5></label>
+              <textarea class="form-control" id="comment" rows="6"></textarea>
             </div>
-            <button class="btn btn-success btn-block">Comment</button>
+            <button type="submit" class="btn btn-success btn-block">Comment</button>
           </form>
         </div>
       </div>
@@ -58,6 +58,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="../../js/particles.js"></script>
   <script src="../../js/app.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../../js/moviedb.js"></script>
+
   <script src="../../js/btnFunction.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="../../js/getGenres.js"></script>
@@ -65,6 +68,7 @@
 
   <script>
     AOS.init();
+      getMovie();
   </script>
 </body>
 
